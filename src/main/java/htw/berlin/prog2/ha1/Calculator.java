@@ -44,6 +44,8 @@ public class Calculator {
      * Werte sowie der aktuelle Operationsmodus zurückgesetzt, so dass der Rechner wieder
      * im Ursprungszustand ist.
      */
+
+    // löscht nur noch eingabe und nicht den zustand
     public void pressClearKey() {
         screen = "0";
 
@@ -58,6 +60,8 @@ public class Calculator {
      * auf dem Bildschirm angezeigt. Falls hierbei eine Division durch Null auftritt, wird "Error" angezeigt.
      * @param operation "+" für Addition, "-" für Substraktion, "x" für Multiplikation, "/" für Division
      */
+
+    // if operation berechnet zwischenergebnis wenn eine operation ausgeführt wird
     public void pressBinaryOperationKey(String operation)  {
         if (!latestOperation.equals("")){
             pressEqualsKey();
